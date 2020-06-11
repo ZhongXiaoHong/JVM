@@ -38,11 +38,11 @@
    
    1.执行main方法，创建一个栈帧入栈，当前线程虚拟机栈如下：
    
-      ![](https://github.com/ZhongXiaoHong/JVM/blob/master/111111111111111111111111111111111.jpg)
+   ![](https://github.com/ZhongXiaoHong/JVM/blob/master/111111111111111111111111111111111.jpg)
       
    2.执行work方法，为work方法创建一个栈帧入栈,当前线程虚拟机栈如下：
    
-     ![](https://github.com/ZhongXiaoHong/JVM/blob/master/aaaaaaaaaaaa.jpg)
+   ![](https://github.com/ZhongXiaoHong/JVM/blob/master/aaaaaaaaaaaa.jpg)
    
    
    
