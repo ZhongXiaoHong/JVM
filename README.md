@@ -34,15 +34,19 @@
    
    **虚拟机栈执行方法过程详解：**
    
-   ![](https://github.com/ZhongXiaoHong/JVM/blob/master/999999999999999.jpg)
+   ![图1](https://github.com/ZhongXiaoHong/JVM/blob/master/999999999999999.jpg)
    
    1.执行main方法，创建一个栈帧入栈，当前线程虚拟机栈如下：
    
-   ![](https://github.com/ZhongXiaoHong/JVM/blob/master/111111111111111111111111111111111.jpg)
+   ![图2](https://github.com/ZhongXiaoHong/JVM/blob/master/111111111111111111111111111111111.jpg)
       
    2.执行work方法，为work方法创建一个栈帧入栈,当前线程虚拟机栈如下：
    
-   ![](https://github.com/ZhongXiaoHong/JVM/blob/master/aaaaaaaaaaaa.jpg)
+   ![图3](https://github.com/ZhongXiaoHong/JVM/blob/master/aaaaaaaaaaaa.jpg)
+   
+   3.执行int x = 1,这一个操作分为两步指令，如图一所示分别是iconst_1表示将int型1入操作数栈，istore_1将操作
+   数栈顶int数值存入局部变量表下标为1的位置，详细如下：
+   
    
    
    
