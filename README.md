@@ -51,6 +51,12 @@
    
    执行iconst_1:
     ![图4](https://github.com/ZhongXiaoHong/JVM/blob/master/wwwwwwwwwwwwwwww.jpg)
+
+   执行istore_1：
+   
+   ![图4](https://github.com/ZhongXiaoHong/JVM/blob/master/eeeeeeeeeeeeeeee3.jpg)
+   
+   
    
    
    
