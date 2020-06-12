@@ -48,6 +48,7 @@
    
    3.执行int x = 1,这一个操作分为两步指令，如图一所示分别是iconst_1表示将int型1入操作数栈，istore_1将操作
    数栈顶int数值存入局部变量表下标为1的位置，详细如下：
+   
    执行iconst_1:
     ![图4](https://github.com/ZhongXiaoHong/JVM/blob/master/wwwwwwwwwwwwwwww.jpg)
    
