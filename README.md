@@ -31,6 +31,10 @@
    
    操作数栈：存放方法执行的操作数（详解见下文）
    
+   动态链接：多态分派（详解见下文）
+   
+   完成出口：
+   
    注意：虚拟机栈是有大小限制的
    
    
@@ -55,6 +59,16 @@
    执行istore_1：
    
    ![图4](https://github.com/ZhongXiaoHong/JVM/blob/master/eeeeeeeeeeeeeeee3.jpg)
+   
+   **动态链接是什么下文使用代码解释**
+   ```java
+    Person person = new Man();
+    person.wc();
+    person = new Woman();
+    person.wc();
+   ```
+   上文person到底要在运行时执行哪个子类的多态的wc方法，如何确定？就是通过动态链接来完成的。
+   
    
    
    
