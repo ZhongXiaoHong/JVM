@@ -140,8 +140,24 @@ public class HuaWeier {
 
 ```
 设置参数，运行代码，参数如下：
--Xmx30m -Xms30m -XX:+UseConcMarkSweepGc -XX:-UseCompressedOops
+
+-Xms30m -Xmx30m -XX:+UseConcMarkSweepGC -XX:-UseCompressedOops
+
 堆最大内存设置为30M,堆初始内存设置为30M,使用CMS垃圾回收器，最后设置内存指针不压缩
+
+###在IDEA运行时如何设置JVM参数，详细过程如下：
+
+ ![](https://github.com/ZhongXiaoHong/JVM/blob/master/8888888888888888888888888888.png)
+ 
+ ![]( https://github.com/ZhongXiaoHong/JVM/blob/master/777777777.jpg)
+ 
+ 设置完成后运行，一下动态展示运行时数据区的变化：
+ 
+ 30：08
+ 
+  
+  
+ 
 
   
 
