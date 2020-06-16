@@ -151,10 +151,25 @@ public class HuaWeier {
  
  ![]( https://github.com/ZhongXiaoHong/JVM/blob/master/777777777.jpg)
  
- 设置完成后运行，一下动态展示运行时数据区的变化：
+ 设置完成后运行，以下动态展示运行时数据区的变化：
  
- 30：08
+ 1.申请内存
  
+ 2.类加载，class进入方法区
+ 
+  ![](https://github.com/ZhongXiaoHong/JVM/blob/master/616111.jpg)
+  
+  3.静态变量，常量进入方法区
+  
+  ![](https://github.com/ZhongXiaoHong/JVM/blob/master/616222.jpg)
+  
+  4.运行main方法，为main方法创建一个栈帧，main方法栈帧进入虚拟机栈
+  
+  ![]( https://github.com/ZhongXiaoHong/JVM/blob/master/616333.jpg)
+  
+ 
+   
+   
   
   
  
