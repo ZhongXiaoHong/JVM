@@ -167,6 +167,15 @@ public class HuaWeier {
   
   ![]( https://github.com/ZhongXiaoHong/JVM/blob/master/616333.jpg)
   
+  5.创建对象： HuaWeier xiaoming = new HuaWeier("小明", IOS_ENGINEER, 33)，
+  
+  xiaoming这个对象引用进入栈帧的局部变量表，对象本身进入堆
+  
+  ![](https://github.com/ZhongXiaoHong/JVM/blob/master/619050.jpg)
+  
+
+  
+  
  
    
    
