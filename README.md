@@ -209,9 +209,9 @@ public class HuaWeier {
 
 绑定进程，填入进程号
 
-![](https://github.com/ZhongXiaoHong/JVM/blob/master/619118.jpg)
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/619118.png)
 
-![](https://github.com/ZhongXiaoHong/JVM/blob/master/619120.jpg)
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/619120.png)
 
 42---00
 
