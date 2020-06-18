@@ -173,6 +173,58 @@ public class HuaWeier {
   
   ![](https://github.com/ZhongXiaoHong/JVM/blob/master/619050.jpg)
   
+  6.垃圾回收20次，xiaoming对象进入老年代
+  
+  ![](https://github.com/ZhongXiaoHong/JVM/blob/master/619054.jpg)
+  
+  7.创建对象： HuaWeier xiaohong = new HuaWeier("小红", IOS_ENGINEER, 22)
+  
+    xiaohong这个对象引用进入栈帧的局部变量表，对象本身进入堆
+    
+    ![](https://github.com/ZhongXiaoHong/JVM/blob/master/619057.jpg)
+    
+ 8.调用  Thread.sleep(Integer.MAX_VALUE)让当前线程休眠很久，此时JVM运行时数据区域内存状态应该是第7步所示那样，
+ 
+ 如何验证这一点，可以使用内存可视化工具HSDB去查看
+ 
+ **如何打开HSDB**
+ 
+ 首先定位到以下目录
+ 
+ ![](https://github.com/ZhongXiaoHong/JVM/blob/master/619106.png)
+ 
+ 打开命令窗口，输入命令：
+ 
+ java -cp .\sa-jdi.jar sun.jvm.hotspot.HSDB
+ 
+会出现下面工具：
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/619112.jpg)
+
+**查看上文示例程序的内存状态**
+
+首先获取上文示例程序所在进程的进程号，如下：
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/619115.jpg)
+
+绑定进程，填入进程号
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/619118.jpg)
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/619120.jpg)
+
+42---00
+
+
+
+
+
+
+ 
+ 
+  
+  
+  
 
   
   
