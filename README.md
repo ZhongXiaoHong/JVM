@@ -179,9 +179,9 @@ public class HuaWeier {
   
   7.创建对象： HuaWeier xiaohong = new HuaWeier("小红", IOS_ENGINEER, 22)
   
-    xiaohong这个对象引用进入栈帧的局部变量表，对象本身进入堆
+   xiaohong这个对象引用进入栈帧的局部变量表，对象本身进入堆
     
-    ![](https://github.com/ZhongXiaoHong/JVM/blob/master/619057.jpg)
+  ![](https://github.com/ZhongXiaoHong/JVM/blob/master/619057.jpg)
     
  8.调用  Thread.sleep(Integer.MAX_VALUE)让当前线程休眠很久，此时JVM运行时数据区域内存状态应该是第7步所示那样，
  
