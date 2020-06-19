@@ -314,6 +314,13 @@ public class Test {
 
 ![](https://github.com/ZhongXiaoHong/JVM/blob/master/620057.png)
 
+**方法区溢出**
+
+**本机直接内存（堆外 ）溢出**
+
+01-07-02
+
+
 
 
 
