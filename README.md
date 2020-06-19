@@ -217,7 +217,13 @@ public class HuaWeier {
 
 ![](https://github.com/ZhongXiaoHong/JVM/blob/master/619120.png)
 
-42---00
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/6162322.png)
+
+如上图，选中main线程，点击顶部第二个图标，查看stack memory（虚拟机栈内存）如下：
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/QQ%E6%88%AA%E5%9B%BE20200619233328.png)
+
+
 
 
 
