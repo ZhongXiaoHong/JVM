@@ -223,6 +223,31 @@ public class HuaWeier {
 
 ![](https://github.com/ZhongXiaoHong/JVM/blob/master/QQ%E6%88%AA%E5%9B%BE20200619233328.png)
 
+上图有两个栈帧，一个是本地方法栈帧即Sleep方法栈帧，一个是java方法main方法栈帧，
+
+从这里也可以看到HotSpots中是将虚拟机栈和本地方法栈合二为一的
+
+> 查看方法区中的HuaWeier.class,以及堆中的两个HuaWeier对象
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/620001.png)
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/620005.png)
+
+双击Huaweier那一行，如下：
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/620009.png)
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/620010.png)
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/620011.png)
+
+
+
+
+
+
+
+
 
 
 
