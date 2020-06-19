@@ -227,7 +227,7 @@ public class HuaWeier {
 
 从这里也可以看到HotSpots中是将虚拟机栈和本地方法栈合二为一的
 
-> 查看方法区中的HuaWeier.class,以及堆中的两个HuaWeier对象
+> 查看方法区中的HuaWeier.class,以及两个HuaWeier对象详情
 
 ![](https://github.com/ZhongXiaoHong/JVM/blob/master/620001.png)
 
@@ -237,9 +237,34 @@ public class HuaWeier {
 
 ![](https://github.com/ZhongXiaoHong/JVM/blob/master/620009.png)
 
+选中一个对象，点击下方的“Inspect”按钮可以查看对象详情：
+
 ![](https://github.com/ZhongXiaoHong/JVM/blob/master/620010.png)
 
 ![](https://github.com/ZhongXiaoHong/JVM/blob/master/620011.png)
+
+在同以下这个图对比地址
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/QQ%E6%88%AA%E5%9B%BE20200619233328.png)
+
+可以知道小明这个对象已经进入了老年代，
+
+小红这个对象还在新生代
+
+> 查看堆详情
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/620018.png)
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/620020.png)
+
+上图展示了堆中内存是分代划分，红色圈中部分是新生代，三个红色箭头分别指向Eden、from、To
+
+蓝色圈中部分是老年代
+
+从上面可以看到堆中内存是连续的，下图讲堆中每个地址标上，如下：
+
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/620031.png)
 
 
 
