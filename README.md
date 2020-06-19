@@ -285,9 +285,34 @@ public class HuaWeier {
 
 栈内存要比堆小的多，栈的深度是有限的，可能发生stackoverflow
 
-> 
+> 内存溢出
+
+**栈溢出**
+
+比如调用没有递归中止的递归方法，会抛出statckoverflow
+
+**堆溢出**
+
+```java
+//TODO -Xms30m -Xmx30m -XX:+PrintGCDetails
+//TODO 分别设置堆初始大小30m，最大30m,打印GC信息
+public class Test {
+
+    public static void main(String[] args){
+
+        String[] array = new  String[31*1024*1024];
+    }
+}
+
+```
+设置虚拟机参数，运行程序
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/620056.png)
+
+堆最大设置30M,创建String[]申请31M，堆溢出：
 
 
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/620057.png)
 
 
 
