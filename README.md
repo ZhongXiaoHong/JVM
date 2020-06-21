@@ -1,6 +1,8 @@
 # Android知识体系构建
 
 [传送门](https://github.com/ZhongXiaoHong/construct_android_dev_skill_tree)
+[对象与垃圾回收机制](https://github.com/ZhongXiaoHong/JVM/blob/master/%E5%AF%B9%E8%B1%A1%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6.md)
+
 
 # JVM
 深入理解JVM原理
