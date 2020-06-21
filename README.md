@@ -436,7 +436,9 @@ public class Test5 {
 
 ```
 
-**共享技术**
+**栈的优化技术**
+
+栈帧之间共享数据，举例如下：
 
 ```java
 public class Test6 {
