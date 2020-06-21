@@ -406,6 +406,66 @@ public static StringBuffer craeteStringBuffer(String s1, String s2) {
 
 
 
+> 虚拟机优化技术
+
+**编译优化**
+
+方法内联，举例如下：
+
+```java
+public class Test5 {
+
+    public static void main(String[] args) {
+
+        //TODO 如果没有优化的，则虚拟机栈会压入两个栈帧，一个是main栈帧，一个是compare栈帧
+        boolean result = compare(1,2);
+        //TODO  上面的调用可以编译优化成以下
+        //TODO   以下优化后可以少一个栈帧入栈，只需压入main栈帧
+       //TODO   这样的优化叫方法内联————将目标方法原封不动的移到调用处来
+       
+        boolean result2 = 1>2;
+
+    }
+
+    public static boolean compare(int a,int b){
+
+        return a>b;
+    }
+}
+
+
+```
+
+**共享技术**
+
+```java
+public class Test6 {
+
+    public void dosth(int x) throws Exception {
+
+        int y = x + 5;
+
+        Thread.sleep(Integer.MAX_VALUE);
+
+    }
+
+    public static void main(String[] args) throws Exception {
+
+        Test6 test = new Test6();
+        test.dosth(100);
+    }
+}
+
+
+```
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/6211114.png)
+
+上图红色圈中的就是main栈帧的操作数栈  与   dosth栈帧的局部变量表共享的部分，
+
+还可以用以下图来辅助理解
+
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/6211110.png)
 
 
 
