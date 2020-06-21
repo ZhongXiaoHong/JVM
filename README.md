@@ -318,6 +318,42 @@ public class Test {
 
 **方法区溢出**
 
+使用cglib动态代理不断生成class，导致方法区溢出
+
+```java
+
+//TODO 设置虚拟机参数  -XX:MetaspaceSize=10M -XX:MaxMetaspaceSize=10m
+//TODO  设置方法区大小最大10M
+public class Test2 {
+
+    public static void main(String[] args){
+
+        while(true){
+
+            Enhancer enhancer = new Enhancer();
+            enhancer.setSuperclass(Test3.class);
+            enhancer.setUseCache(true);//TODO  不使用缓存，每一次都重新创建Test3对应的代理类字节码
+            enhancer.setCallback(new MethodInterceptor() {
+                public Object intercept(Object arg0, Method arg1, Object[] arg2, MethodProxy arg3) throws Throwable {
+                    return arg3.invokeSuper(arg0, arg2);
+                }
+            });
+            enhancer.create();
+
+
+        }
+
+
+    }
+}
+
+
+```
+![](https://github.com/ZhongXiaoHong/JVM/blob/master/6211015.png)
+
+
+
+
 **本机直接内存（堆外 ）溢出**
 
 
